@@ -68,16 +68,18 @@ int main(){
 // 1+2+3+4+...+n=sum
 // tell sum??
 
-    // int n;
-    // int a=1;
-    // int sum=0;
-    // cout<<"enter a num : ";
-    // cin>>n;
-    // while(a<=n){
-    //     sum+=a;
-    //     a++;
-    // }
-    // cout<<sum;
+    int n;
+    int sum=0;
+    cout<<"enter a num : ";
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        if(i%2==0){
+        cout<<i<<" ";
+        sum+=i;
+        }
+    }
+    cout<<endl;
+    cout<<"the sum of 1 to n even num is: "<<sum;
 
     return 0;
 

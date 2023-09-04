@@ -1,7 +1,6 @@
  #include <iostream>
  using namespace std;
  int main(){
-    cout<<sum;
+    cout<<"to be continue..";
     return 0;
-
 }
