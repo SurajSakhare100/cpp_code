@@ -1,114 +1,84 @@
 #include <iostream>
 using namespace std;
-int power(int a,int b){
-    int temp=1;
-        for(int i=1;i<b+1;i++){
-          temp=a*temp;
-        }
-          return temp;
-    }
-bool iseven(int a){
-      if(a%2==0){
-        return 1;
-      }
-      else{
-        return 0;
-      }
-}
-int fact(int n){
-    // cout<<n;
-     int fact=1;
-     for(int i=1;i<n+1;i++){
-        fact=fact*i;
-     }
-     return fact;
-}
-int ncr(int n,int r){
-    int z=fact(n)/(fact(r)*fact(n-r));
-    return z;
-}
-bool isprime(int n){
-    
-    for(int i=2;i<n;i++){
-      if(n%i==0){
-        return 0;
-       }
-    }
-    return 1;
-}
-void fibo(int n){
-    int a=0;
-    int b=1;
-    int temp;
-    if(n==0){
-        cout<<"invalid";
-        // break;
-    }
-    if(n==1){
-        cout<<0 <<" ";
-        // break;
-    }
-     if(n<=2){
-        cout<<"0 1";
-        // break;
-    }
-      cout<<a<<" "<<b<<" ";
-    for(int i=2;i<n;i++){
-        temp=a+b;
-        cout<<temp<<" ";
-        a=b;
-        b=temp;
-    }
-}
 int main(){
+    // if - else condinals...
 
-// power of number
+    // your are adult check..
 
+    // cout<<"enter a num : ";
     // int a;
-    // int b;
-    // cout<<"num : ";
     // cin>>a;
-    // cout<<"power : ";
-    // cin>>b;
-    // cout<<"your ans: "<<power(a,b);
-
-// is even num
-
-    // int num;
-    // cout<<"enter your num : ";
-    // cin>>num;
-    // if(iseven(num)){
-    //     cout<<"num is even";
+    // if(a>18){
+    //     cout<<"your are adult";
     // }
     // else{
-    //     cout<<"num is odd";
+    //     cout<<"your are not adult";
+    // }  
+    
+    // check +ve/-ve number
+
+    // cout<<"enter a num : ";
+    // int b;
+    // cin>>b;
+    // if(b>0){
+    //      cout<<"Num is positive";
+    // }
+    // else if (b<0){
+    //      cout<<"Num is negitive";
+    // }  
+    // else{
+    //     cout<<"Num is zero";
     // }
 
-//ncr == n!/r!*(n-r)!
+    // tricy question tell output ??
 
-    // int n,r;
-    // cout<<"enter n : ";
+    //Q1
+
+    // int a=2;
+    // int b=a+1;
+    // if((a=3)==b){
+    //      cout<<a;
+    // } 
+    // else{
+    //     cout<<a+1;
+    // }
+
+    //Q2
+
+    // int a=24;
+    // if(a>20){
+    //      cout<<"I";
+    // }
+    // else if (a==24){
+    //      cout<<"love";
+    // }  
+    // else{
+    //     cout<<"my india ";
+    // }
+
+//  while loop , do while loop, for loop ..
+    // int n;
+    // int a=1;
+    // cout<<"enter a num : ";
     // cin>>n;
-    // cout<<"enter r : ";
-    // cin>>r;
-    // cout<<"your ncr value : "<<ncr(n,r);
+    // while(a<=n){
+    //     cout<<a;
+    //     a=a+1;
+    // }
+// 1+2+3+4+...+n=sum
+// tell sum??
 
-// is it prime...
+    // int n;
+    // int a=1;
+    // int sum=0;
+    // cout<<"enter a num : ";
+    // cin>>n;
+    // while(a<=n){
+    //     sum+=a;
+    //     a++;
+    // }
+    // cout<<sum;
 
-//     int n;
-//     cout<<"enter num : ";
-//     cin>>n;
-//     if(isprime(n)){
-//         cout<<"num is prime";
-//     }
-//     else{
-// cout<<"num is not prime";
-//     }
-
-// fibonachi series 0,1,1,2,3,5,8,13.... print upto nth term
-    int n;
-    cout<<"enter nth term : ";
-    cin>>n;
-    fibo(n);
     return 0;
+
 }
