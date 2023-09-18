@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//day5
 // Linear search by function
 // if found , then return location i , otherwise return -1
 
